@@ -1,0 +1,985 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волга-Дельта — охотничье-рыболовное хозяйство в Астраханской области | Инвестиционное предложение</title>
+    <meta name="description" content="Каралатское охотничье-рыболовное хозяйство ОАО «Волга-Дельта»: 27 000 га угодий в дельте Волги, плавучий отель, проект коттеджного посёлка, прудовое хозяйство. Ищем инвестора или покупателя.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+    <div class="container site-header__inner">
+        <a href="#top" class="brand">
+            <img src="images/logotype.png" alt="Волга-Дельта" class="brand__logo">
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#about" class="nav__link">Хозяйство</a>
+            <a href="#base" class="nav__link">Турбаза</a>
+            <a href="#village" class="nav__link">Посёлок</a>
+            <a href="#ponds" class="nav__link">Пруды</a>
+            <a href="#registry" class="nav__link">Имущество</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+        <div class="site-header__contacts">
+            <a href="tel:+79272824922" class="site-header__phone">8 (927) 282-49-22</a>
+            <a href="#contacts" class="btn btn--small">Связаться</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero__media">
+            <video class="hero__img" autoplay muted loop playsinline preload="metadata" poster="videos/hero-poster.jpg" aria-hidden="true">
+                <source src="videos/hero-loop.webm" type="video/webm">
+                <source src="videos/hero-loop.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="container hero__inner">
+            <p class="hero__eyebrow reveal">Астраханская область · Камызякский район · дельта Волги</p>
+            <h1 class="hero__title reveal">
+                <span class="hero__title-accent">«Волга-Дельта»</span>
+                <span class="hero__title-small">Каралатское охотничье-рыболовное хозяйство</span>
+            </h1>
+            <p class="hero__text reveal">27 000 га угодий в сердце дельты Волги с выходом на 5 км в открытое Каспийское море. Плавучая турбаза, проект коттеджного посёлка, прудовое хозяйство и ферма — единым активом.</p>
+            <div class="hero__actions reveal">
+                <a href="#assets" class="btn">Инвестиционное предложение</a>
+                <a href="#contacts" class="btn btn--ghost">Контакты</a>
+            </div>
+            <div class="hero__stats reveal">
+                <div class="stat">
+                    <span class="stat__value"><span data-count="27000">0</span> га</span>
+                    <span class="stat__label">угодий</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value"><span data-count="1952">0</span></span>
+                    <span class="stat__label">год основания</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value"><span data-count="15">0</span> км</span>
+                    <span class="stat__label">до Каспийского моря</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value"><span data-count="85">0</span> км</span>
+                    <span class="stat__label">от Астрахани</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about__text reveal">
+                    <p class="section__eyebrow">О хозяйстве</p>
+                    <h2 class="section__title">Одно из старейших охотхозяйств России</h2>
+                    <p class="lead">Угодья Каралатского охотничье-рыболовного хозяйства простираются по дельте Волги с севера на юг на 40 км, в самом широком месте с востока на запад — на 10 км.</p>
+                    <p>Причудливая сеть речек-проток и изумрудная гладь Каспия. Богатейший мир рыб, огромные колонии птиц и редчайшие животные, занесённые в Красную книгу России.</p>
+                    <p>Яркий климат долгого лета, просторы акватории и густые заросли надводной растительности создают прекрасные возможности для отдыха и туризма: в сочетании с комфортным проживанием природные условия позволяют полноценно отдохнуть и набраться новых впечатлений.</p>
+                </div>
+                <div class="about__media reveal">
+                    <div class="photo">
+                        <img src="images/new/foto_max_2.png" alt="Закат над протоками дельты Волги">
+                    </div>
+                </div>
+            </div>
+            <div class="about__facts reveal">
+                <div class="fact"><b>1952</b><span>год основания</span></div>
+                <div class="fact"><b>27 000</b><span>га угодий</span></div>
+                <div class="fact"><b>58+</b><span>видов птиц</span></div>
+                <div class="fact"><b>~50</b><span>видов рыб</span></div>
+            </div>
+            <div class="about-topics">
+                <div class="topic reveal">
+                    <h3>Птицы дельты</h3>
+                    <p>В дельте обитает более <strong>58 видов птиц</strong>, общая численность гнездящихся достигает <strong>180 тыс. пар</strong>, в том числе лебедя-шипуна — 2,8–3 тыс. пар.</p>
+                    <p>Низовья дельты — важнейший миграционный этап уток и гусеобразных: они концентрируются в островной зоне и авандельте, растительные ресурсы которых дают жировой запас для продолжения перелёта. В массе пролетают шилохвость, кряква, серая утка, чирок-свистунок, хохлатая чернеть, многочисленны серый гусь и лебедь-кликун, обычен, но малочислен белоглазый нырок. На весеннем и осеннем пролёте численность достигает <strong>5–7 млн</strong>.</p>
+                    <p>Всего в дельте встречается <strong>19 видов птиц</strong>, внесённых в Красную книгу, и ещё <strong>12 видов</strong> под постоянным контролем как потенциально редкие — включая каравайку, пеганку и огаря, на которых ведётся охота.</p>
+                </div>
+                <div class="topic reveal">
+                    <h3>Ихтиофауна</h3>
+                    <p>В дельте Волги охраняются места нереста и миграционные пути эндемичных каспийских видов — атеринки, иглы, малой южной колюшки, бычков (кругляка, головоча, песочника, гонца, луцика, пуголовки), волжской сельди, каспийского пузанка и черноспинки.</p>
+                    <p>В нижней зоне дельты сосредоточены важнейшие нерестилища промысловых рыб, которые в сочетании с местами нагула взрослых рыб и молоди в Северном Каспии обусловливают богатство ихтиофауны — около <strong>50 видов</strong>, главным образом полупроходных и туводных.</p>
+                </div>
+                <div class="topic reveal">
+                    <h3>Реликтовая флора</h3>
+                    <p>Низовья дельты — редкий по богатству очаг произрастания реликтовых водных растений: <strong>каспийского лотоса</strong>, <strong>водяного ореха (чилима)</strong> и водяных папоротников — сальвинии плавающей и марсилеи.</p>
+                    <p>Мозаика тростника, лотоса, кувшинок и белых лилий формирует уникальный ландшафт угодий и кормовую базу для миллионов водоплавающих птиц.</p>
+                </div>
+            </div>
+            <div class="wildlife reveal">
+                <div class="wildlife__photo">
+                    <img src="images/new/eagles.jpg" alt="Орлан-белохвост у гнезда">
+                </div>
+                <div class="wildlife__content">
+                <h3 class="wildlife__title">На территории хозяйства представлены</h3>
+                <ul class="wildlife__list">
+                    <li><b>19 шт</b> гнёзда орлана-белохвоста <i>(Красная книга РФ)</i></li>
+                    <li><b>2</b> колонии большого баклана — более 5 000 особей</li>
+                    <li><b>1</b> колония больших и малых белых цапель — более 500 особей</li>
+                    <li><b>1</b> колония малых бакланов</li>
+                    <li><b>5 шт</b> гнёзда скопы <i>(международная Красная книга)</i></li>
+                    <li><b>1</b> колония кудрявых пеликанов — более 50 особей</li>
+                    <li>и много других редких видов</li>
+                </ul>
+                <p class="wildlife__note">В разные сезоны встречаются кудрявый и розовый пеликаны, султанка, стерх, фламинго, краснозобая казарка, мраморный чирок, колпица, савка, балобан и сапсан. Особо охраняются местные популяции лебедя-шипуна, малого баклана и жёлтой цапли.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--map" id="borders">
+        <div class="map-hero">
+            <div class="map-hero__frame" id="groundsMap" role="img" aria-label="Карта границ охотничьих угодий ОАО «Волга-Дельта»"></div>
+            <button class="map-hero__shield" id="mapShield" type="button" aria-label="Активировать карту">
+                <span>Кликните, чтобы управлять картой</span>
+            </button>
+            <div class="map-zoom">
+                <button class="map-zoom__btn" id="mapZoomIn" type="button" aria-label="Приблизить">+</button>
+                <button class="map-zoom__btn" id="mapZoomOut" type="button" aria-label="Отдалить">−</button>
+            </div>
+            <div class="container map-hero__inner">
+                <div class="map-card reveal">
+                    <p class="section__eyebrow">Территория</p>
+                    <h2 class="section__title">Границы охотничьих угодий</h2>
+                    <div class="borders">
+                        <div class="border-item">
+                            <h4>Северная</h4>
+                            <p>От точки № 1 на правом берегу истока Рытого Колочного канала по его правому берегу до места слияния с Бардынинским каналом.</p>
+                        </div>
+                        <div class="border-item">
+                            <h4>Восточная</h4>
+                            <p>От места слияния Рытого Колочного канала с Бардынинским каналом вниз по течению по правому берегу Бардынинского канала (рыбохода) до точки № 2 в Каспийском море.</p>
+                        </div>
+                        <div class="border-item">
+                            <h4>Южная</h4>
+                            <p>Точка № 2 расположена непосредственно в акватории Каспийского моря.</p>
+                        </div>
+                        <div class="border-item">
+                            <h4>Западная</h4>
+                            <p>От точки № 2 на северо-запад до острова Галкин, далее через точки № 4–7 по левой бровке реки Шимоха и Каралатского банка до точки № 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="assets">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Предмет сделки</p>
+                <h2 class="section__title">Три актива единым предложением</h2>
+            </div>
+            <div class="assets">
+                <article class="asset-card reveal">
+                    <div class="asset-card__media">
+                        <img src="images/banner/image1.jpg" alt="Угодья Каралатского хозяйства">
+                    </div>
+                    <div class="asset-card__body">
+                        <span class="asset-card__num">01</span>
+                        <h3>Охотничье-рыболовное хозяйство</h3>
+                        <p>27 000 га угодий в аван-дельте Волги с выходом на 5 км в открытое Каспийское море. Одно из старейших хозяйств страны — работает с 1952 года.</p>
+                    </div>
+                </article>
+                <article class="asset-card reveal">
+                    <div class="asset-card__media">
+                        <img src="images/banner/image2.jpg" alt="Плавучая гостиница Волга-Дельта">
+                    </div>
+                    <div class="asset-card__body">
+                        <span class="asset-card__num">02</span>
+                        <h3>Турбаза «Волга-Дельта»</h3>
+                        <p>Самый большой плавучий отель Астраханской области: дебаркадер 70×14 м, 2 этажа, 1 200 м², вместимость 42 гостя, ресторан и бар.</p>
+                    </div>
+                </article>
+                <article class="asset-card reveal">
+                    <div class="asset-card__media">
+                        <img src="images/new/future-3.png" alt="Проект коттеджного посёлка">
+                    </div>
+                    <div class="asset-card__body">
+                        <span class="asset-card__num">03</span>
+                        <h3>Посёлок и пруды</h3>
+                        <p>Проект коттеджного посёлка на 71 га на острове Баткачный: 274 участка ИЖС, 20 га под коммерцию, 3 пруда по 45 га.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt section--base" id="base">
+        <div class="base-hero">
+            <video class="base-hero__video" autoplay muted loop playsinline preload="metadata" poster="images/image4.jpg" aria-hidden="true">
+                <source src="videos/baza2.mp4" type="video/mp4">
+            </video>
+            <div class="container base-hero__inner">
+                <div class="split__text reveal">
+                    <h2 class="section__title">Плавучий отель в аван-дельте Волги</h2>
+                    <p>Компания специализируется на оздоровительном отдыхе с акцентом на экологический, рыболовный и охотничий туризм с 1991 года.</p>
+                    <p>Двухэтажная гостиница стоит прямо в аван-дельте среди зарослей лотоса. Вместимость — 42 человека: люкс, полулюкс, одно- и двухместные номера со всеми удобствами. Ресторан, бар, спутниковое ТВ, центральные отопление и водоснабжение, кондиционеры, собственная очистка воды и биологическая очистка стоков.</p>
+                    <ul class="check-list">
+                        <li>Повара готовят 3 раза в день — европейская, русская и азиатская кухня, блюда из добытых трофеев</li>
+                        <li>Прогулочные палубы на гостинице, благоустроенная прилегающая территория</li>
+                        <li>Полный комплект лицензионно-разрешительных документов</li>
+                    </ul>
+                    <div class="route">
+                        <h4>Как добраться</h4>
+                        <p>с. Каралат — 60 км от аэропорта Астрахани по асфальту, ~1 час. Далее на быстроходном катере 25 км, ~30 минут.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="services reveal">
+                <h3 class="services__title">Виды услуг</h3>
+                <div class="srv">
+                    <div class="srv-tile">
+                        <img class="srv-tile__img" src="images/new/ecology_tours.png" alt="Экологические экскурсии">
+                        <div class="srv-tile__content">
+                            <h4>Экологические экскурсии</h4>
+                            <span class="srv-tile__season">май — октябрь</span>
+                            <p>Поля лотоса, белых лилий и жёлтых кувшинок. Массовое цветение лотоса — с 10 июля по 15 сентября. Колонии бакланов и цапель, краснокнижные птицы.</p>
+                        </div>
+                    </div>
+                    <div class="srv-tile">
+                        <img class="srv-tile__img" src="images/new/fishing_tours.png" alt="Рыболовные туры">
+                        <div class="srv-tile__content">
+                            <h4>Рыболовные туры</h4>
+                            <span class="srv-tile__season">15 марта — 15 ноября</span>
+                            <p>Сом, судак, сазан, жерех, щука, окунь, лещ, вобла, карась — несколько десятков видов. Аренда спиннингов и удочек, копчение и балки из улова.</p>
+                        </div>
+                    </div>
+                    <div class="srv-tile">
+                        <img class="srv-tile__img" src="images/new/hunt_tours.png" alt="Охотничьи туры">
+                        <div class="srv-tile__content">
+                            <h4>Охотничьи туры</h4>
+                            <span class="srv-tile__season">сентябрь — 31 декабря</span>
+                            <p>Водоплавающая птица с чучелами, знаменитые гусиные базары поздней осенью. Болотоходы и корабли на воздушной подушке.</p>
+                        </div>
+                    </div>
+                    <div class="srv-tile">
+                        <img class="srv-tile__img" src="images/new/under_water_tours.png" alt="Подводная охота">
+                        <div class="srv-tile__content">
+                            <h4>Подводная охота</h4>
+                            <span class="srv-tile__season">март — ноябрь</span>
+                            <p>Раскатная часть дельты Волги: глубины до 3 м и ямы 8–20 м.</p>
+                        </div>
+                    </div>
+                    <div class="srv-tile">
+                        <img class="srv-tile__img" src="images/new/outventure_tours.png" alt="Мероприятия">
+                        <div class="srv-tile__content">
+                            <h4>Мероприятия</h4>
+                            <span class="srv-tile__season">круглый год</span>
+                            <p>Корпоративные вечеринки, семейный отдых, семинары, конференции, торжественные вечера, экскурсии по Астраханской области.</p>
+                        </div>
+                    </div>
+                    <a class="srv-tile srv-tile--cta" href="#contacts">
+                        <h4>Соберём программу под вас</h4>
+                        <p>Индивидуальные маршруты, гид, трансфер и баня на воде — по запросу</p>
+                        <span class="srv-tile__go">Связаться →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="advantages">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Почему мы</p>
+                <h2 class="section__title">Отличия, которые не повторить</h2>
+            </div>
+            <div class="adv reveal" id="advSlider">
+                <div class="adv__item">
+                    <p>Уникальное расположение — ближе к морю никого нет. Рыбалка и охота «вплотную».</p>
+                </div>
+                <div class="adv__item">
+                    <p>Самый большой плавучий отель в Астраханской области.</p>
+                </div>
+                <div class="adv__item">
+                    <p>Лотосные поля вокруг базы и чистая вода.</p>
+                </div>
+                <div class="adv__item">
+                    <p>Полное отсутствие мошки — близость к открытому морю.</p>
+                </div>
+                <div class="adv__item">
+                    <p>27 000 га угодий с выходом на 5 км в Каспийское море — рыбалка прямо в море.</p>
+                </div>
+                <div class="adv__item">
+                    <p>Открытые просторы и панорамный вид с гостиницы.</p>
+                </div>
+                <div class="adv__dots" id="advDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--village" id="village">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Девелопмент</p>
+                <h2 class="section__title">Коттеджный посёлок «Волга-Дельта»</h2>
+                <p class="section__sub">Земли поселений на острове Баткачный, 60 км от Астрахани. Координаты: 45.750886, 47.972556</p>
+            </div>
+            <div class="village">
+                <div class="village-hero reveal">
+                    <img src="images/new/future-3.png" alt="Генплан коттеджного посёлка «Волга-Дельта» — вид сверху">
+                    <span class="village-hero__tag">Концепт-проект</span>
+                    <div class="village-hero__stats">
+                        <div class="village-stat">
+                            <b>71 га</b>
+                            <span>остров Баткачный</span>
+                        </div>
+                        <div class="village-stat">
+                            <b>274</b>
+                            <span>участка ИЖС по 10 соток</span>
+                        </div>
+                        <div class="village-stat">
+                            <b>1 200 м</b>
+                            <span>причальная набережная</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="village-pair">
+                    <figure class="village-shot reveal">
+                        <img src="images/new/future-1.png" alt="Плавучие дома вокруг лагуны">
+                        <figcaption>
+                            <b>Плавучие дома</b>
+                            <span>Дома на воде у собственного причала — формат, уникальный для региона</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="village-shot reveal">
+                        <img src="images/new/future-2.png" alt="Променадная набережная посёлка">
+                        <figcaption>
+                            <b>Набережная и марина</b>
+                            <span>Променад вдоль воды, причал для яхт и катеров</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="village__grid">
+                    <div class="village-card reveal">
+                        <h4>Участки ИЖС</h4>
+                        <p class="village-card__big">53 га · 274 участка</p>
+                        <p>По 10 соток. Цена — 2,5–3 млн ₽ за участок.</p>
+                    </div>
+                    <div class="village-card reveal">
+                        <h4>Коммерческая застройка</h4>
+                        <p class="village-card__big">20 га</p>
+                        <p>Гостиница, гольф, аквапарк, кемпинг, бизнес-центр, база отдыха.</p>
+                    </div>
+                    <div class="village-card reveal">
+                        <h4>Плавучие дома</h4>
+                        <p class="village-card__big">от 20 млн ₽</p>
+                        <p>Дома на воде у собственного причала — формат, уникальный для региона.</p>
+                    </div>
+                </div>
+                <div class="village-about reveal">
+                    <div class="village-about__text">
+                        <h3 class="village-h3">Посёлок на острове Баткачный</h3>
+                        <p>Коттеджный посёлок расположен на острове «Баткачный» в 25 км к югу от с. Каралат, на территории действующей базы отдыха «Волга-Дельта». С северо-запада остров омывает залив размером 1 км с востока на запад и 2,5 км с севера на юг.</p>
+                        <p>Благодаря островному расположению у каждого участка есть <b>собственный выход к воде</b>, а единая концепция благоустройства создаёт уникальную клубную атмосферу. На участках у воды помимо загородных домов планируется строительство эллингов для водного транспорта.</p>
+                        <p>Административная эксплуатационная служба отвечает за порядок, чистоту и вывоз мусора. Общие территории, прогулочные зоны и места общественного отдыха озеленяются молодыми деревьями, кустарниками и газонами.</p>
+                    </div>
+                    <div class="village-facts">
+                        <div class="village-fact">
+                            <span>Площадь застройки</span>
+                            <b>71 га</b>
+                        </div>
+                        <div class="village-fact">
+                            <span>Местоположение</span>
+                            <b>Каспийское море,<br>Камызякский р-н,<br>Астраханская обл.</b>
+                        </div>
+                        <div class="village-fact">
+                            <span>Координаты</span>
+                            <b>45.757022 · 48.446578</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="village-pair">
+                    <figure class="village-shot reveal">
+                        <img src="images/new/future-6.png" alt="Острова посёлка с причалами — вид сверху">
+                        <figcaption>
+                            <b>Острова Баткачного</b>
+                            <span>Каждый участок — с выходом к воде и собственным причалом</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="village-shot reveal">
+                        <img src="images/new/future-4.png" alt="Коттеджные улицы посёлка у воды">
+                        <figcaption>
+                            <b>Коттеджные кварталы</b>
+                            <span>Улицы посёлка с причалами и беседками у воды</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="village-zones">
+                    <div class="zone reveal">
+                        <span class="zone__pos">Северо-восток</span>
+                        <b>Общественная зона</b>
+                        <p>Ресторан, бассейн, спортивные площадки, летнее кафе и пляж</p>
+                    </div>
+                    <div class="zone reveal">
+                        <span class="zone__pos">Центр острова</span>
+                        <b>Пост охраны</b>
+                        <p>Контроль доступа и безопасность территории посёлка</p>
+                    </div>
+                    <div class="zone reveal">
+                        <span class="zone__pos">Юго-запад</span>
+                        <b>Пруд</b>
+                        <p>Тихая водная зона внутри посёлка</p>
+                    </div>
+                </div>
+                <figure class="village-shot village-shot--wide reveal">
+                    <img src="images/new/future-5.png" alt="Общественная зона отдыха: бассейн и ресторан у воды">
+                    <figcaption>
+                        <b>Общественная зона отдыха</b>
+                        <span>Ресторан у воды, бассейн, спортивные площадки и пляж</span>
+                    </figcaption>
+                </figure>
+                <div class="offer reveal">
+                    <h3 class="village-h3">Предлагается к продаже</h3>
+                    <div class="offer__grid">
+                        <div class="offer-card">
+                            <div class="offer-card__top">
+                                <h4>Земельные участки</h4>
+                                <span class="offer-card__price">от 250 тыс. ₽/сотка</span>
+                            </div>
+                            <p class="offer-card__label">В стоимость участка входит</p>
+                            <ul class="tick-list">
+                                <li>Насыпанный ровный участок — не затопляется</li>
+                                <li>Подвод коммуникаций: водопровод и электричество от дизеля — 10 кВт на участок, увеличение потребления по согласованию</li>
+                                <li>Бесплатная охраняемая стоянка автомобилей в с. Каралат</li>
+                            </ul>
+                        </div>
+                        <div class="offer-card">
+                            <div class="offer-card__top">
+                                <h4>Плавучий дом</h4>
+                                <span class="offer-card__price">от 1,5 млн ₽</span>
+                            </div>
+                            <p class="offer-card__desc">Плавучая бетонная платформа — понтон-основание для строительства дома или пирса.</p>
+                            <div class="plat">
+                                <div class="plat__row plat__row--head">
+                                    <span>Платформа</span><span>Площадь</span><span>Цена</span>
+                                </div>
+                                <div class="plat__row"><span>20 × 7 м</span><span>140 м²</span><span>1,5 млн ₽</span></div>
+                                <div class="plat__row"><span>30 × 10 м</span><span>300 м²</span><span>2,0 млн ₽</span></div>
+                                <div class="plat__row"><span>35 × 10 м</span><span>350 м²</span><span>2,5 млн ₽</span></div>
+                            </div>
+                            <p class="offer-card__desc">Регистрируется в регистре как плавучий понтон. Надстройку можно не регистрировать; для оформления дома в собственность потребуется проект (оплачивается отдельно).</p>
+                            <p class="offer-card__label">В стоимость платформы входит</p>
+                            <ul class="tick-list">
+                                <li>Стоянка в Астрахани на время строительства дома</li>
+                                <li>Перегон из Астрахани до острова</li>
+                            </ul>
+                            <p class="offer-card__label">Дополнительно</p>
+                            <ul class="tick-list">
+                                <li>Согласование проектов забора воды и слива сточных вод — система биологической очистки</li>
+                                <li>Охрана — 10 тыс. ₽/мес за объект</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="rules">
+                    <div class="rules__col reveal">
+                        <h4>Единые правила застройки усадеб</h4>
+                        <ul class="tick-list">
+                            <li>Забор — декоративная сетка-рабица с кустарниками: декоративные, малина, крыжовник и т. д.</li>
+                            <li>Крыша — в одной цветовой гамме</li>
+                            <li>Здание — не более 2 этажей</li>
+                        </ul>
+                    </div>
+                    <div class="rules__col reveal">
+                        <h4>Оплачивается дополнительно</h4>
+                        <ul class="tick-list">
+                            <li>Охрана территории — 1 тыс. ₽/сотка после начала ввоза стройматериалов; если участок куплен и строительство не ведётся, охрана не оплачивается</li>
+                            <li>Коммуникации — по счётчику</li>
+                            <li>Вывоз твёрдо-бытовых отходов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="infra reveal">
+                <h3 class="infra__title">Инфраструктура посёлка</h3>
+                <ul class="infra__list">
+                    <li>Причальная набережная 1 200 м</li>
+                    <li>Пирс и причал для яхт и катеров</li>
+                    <li>Центральное водоснабжение</li>
+                    <li>Электроснабжение от дизель-генератора</li>
+                    <li>Котельная</li>
+                    <li>Ресторан, бар и летнее кафе</li>
+                    <li>Бильярдная</li>
+                    <li>Бассейн и баня</li>
+                    <li>Пруд и сад</li>
+                    <li>Теннисный корт</li>
+                    <li>Детские и спортивные площадки</li>
+                    <li>Вертолётная площадка</li>
+                    <li>Продуктовый и рыболовно-охотничий магазины</li>
+                    <li>Гостиница</li>
+                    <li>Пункт скорой медицинской помощи</li>
+                    <li>Служба эксплуатации: электрик, горничная, повар, садовник, егеря, охрана</li>
+                    <li>Видеонаблюдение и сигнализация в общественных местах</li>
+                    <li>Гид по рыбалке и охоте</li>
+                    <li>Охраняемая территория, земля в собственности</li>
+                </ul>
+                <div class="infra__bottom">
+                    <div class="perks">
+                        <h4 class="perks__title">Жизнь на острове</h4>
+                        <ul class="perks__list">
+                            <li>Своя лодка, катер или яхта на острове</li>
+                            <li>Аренда егеря на время приезда</li>
+                            <li>Чистая вода, лотосы, близость Каспия — от посёлка до моря более 10 ям для рыбалки</li>
+                            <li>Возможность сдавать своё жильё в аренду</li>
+                            <li>Живописные окрестности и хорошая экологическая обстановка</li>
+                            <li>Отличные условия для отдыха с семьёй</li>
+                        </ul>
+                    </div>
+                    <div class="eco-note">
+                        <b>Энергия и экология</b>
+                        <ul>
+                            <li>Возобновляемая энергетика: солнечные панели 1–3 кВт для освещения участка и дома</li>
+                            <li>Горячая вода — от солнечных коллекторов с дублированием электричеством</li>
+                            <li>Канализация «Топаз» — биологическая очистка стоков; очищенной водой можно поливать деревья</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="ponds">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Аквакультура</p>
+                <h2 class="section__title">Прудовое хозяйство</h2>
+                <p class="section__sub">3 участка под пруды в среднем по 140 га · 1,5 млн м³ воды · дренаж и водоснабжение</p>
+            </div>
+            <div class="photo photo--wide ponds__hero reveal">
+                <img src="images/new/prud-base.png" alt="Участки под пруды">
+            </div>
+            <div class="ponds-species">
+                <article class="pond-card reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Белый амур</h3>
+                                <i>макрофитофаг · биологический мелиоратор</i>
+                            </div>
+                            <span class="pond-card__yield">до 1 000 кг/га</span>
+                        </div>
+                        <p>Высоко ценится как продукт питания: мясо жирное, плотное, белого цвета, вкусное и питательное. Ценна и крупная печень амура с повышенным содержанием жира — её тоже используют в пищу.</p>
+                        <p>Один из предпочитаемых видов наряду с карпом — конкуренции за корм между ними нет. Рыба неприхотлива, быстро растёт и очищает водоёмы от зарастания, поэтому ей отдают предпочтение в разведении.</p>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/prud-amur.png" alt="Белый амур"></div>
+                </article>
+                <article class="pond-card pond-card--rev reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Толстолобик</h3>
+                                <i>фитофаг · вид крупных рек</i>
+                            </div>
+                            <span class="pond-card__yield">до 1 000 кг/га</span>
+                        </div>
+                        <p>Переносит высокую солёность и низкое содержание растворённого кислорода (3 мг/л). В естественном ареале достигает зрелости в 4–8 лет и живёт до 20 лет; сегодня выращивается в аквакультуре по всему миру.</p>
+                        <p>Продуктивность зависит от содержания кислорода в воде и питания в период выращивания — в благоприятных условиях доходит до 1 000 кг/га.</p>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/prud-tolstolobik.png" alt="Толстолобик"></div>
+                </article>
+                <article class="pond-card reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Карп</h3>
+                                <i>всеядный · быстрый рост</i>
+                            </div>
+                            <span class="pond-card__yield">до 6 т/га</span>
+                        </div>
+                        <p>Прожорлив и всеяден: животную пищу предпочитает весной и осенью, растительную — летом. Желудок устроен так, что рыба может есть практически без остановки и быстро набирает вес — при интенсивном кормлении в прудах можно взять до 6 тонн с 1 га.</p>
+                        <p>Популяция карпа стабильна, мясо популярно у гурманов, поэтому разводить его на продажу выгодно: он быстро растёт и активно размножается. Пленяет карп не только отменными вкусовыми качествами, но и благородным золотистым внешним видом.</p>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/prud-karp.png" alt="Карп"></div>
+                </article>
+                <article class="pond-card pond-card--rev reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Бестер</h3>
+                                <i>гибрид стерляди и белуги</i>
+                            </div>
+                            <span class="pond-card__yield">икра с 3-го года</span>
+                        </div>
+                        <p>Один из самых коммерчески выгодных видов осетровых. Икра и молока добываются зимой и ранней весной: самки дают до 300 тысяч икринок, белужий бестер — до полумиллиона. Крупная рыба — до 175 см и 30 кг, оптимальная температура воды около +25 °C.</p>
+                        <p>Личинки через несколько дней после появления на свет переходят на гранулированный корм; взрослая рыба питается мелкой рыбёшкой и гранулированным кормом.</p>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/prud-sterlyad-beluga.png" alt="Бестер"></div>
+                </article>
+                <article class="pond-card reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Веслонос</h3>
+                                <i>осетровый · деликатесная продукция</i>
+                            </div>
+                            <span class="pond-card__yield">+300 кг/га</span>
+                        </div>
+                        <p>Приспособлен к условиям от субтропических до резко континентальных, совершает миграции из рек в озёра и обратно. Ремонтная молодь прибавляет 6,8 кг за одно лето, в благоприятных условиях — 8,5–15,3 кг. Благополучно зимует в карповых зимовальных прудах, при осеннем облове скатывается в рыбоуловитель первым.</p>
+                        <p>В поликультуре с осетровыми, карпом и растительноядными даёт до 300 кг/га дополнительной деликатесной продукции. Маточные стада требуют водоёмов 100–2 000 га с незамерзающим слоем воды от 1,5 м.</p>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/prud-veslonos.png" alt="Веслонос"></div>
+                </article>
+            </div>
+            <div class="ponds__grid">
+                <div class="ponds-card reveal">
+                    <h3>Почему диетологи выбирают мясо толстолобика</h3>
+                    <ul class="check-list">
+                        <li>Организм без труда усваивает 98% белков рыбы — на полное усвоение мяса нужно около 2 часов</li>
+                        <li>Рыбий жир содержит витамины групп А и D, а мясо — минимум калорий</li>
+                        <li>Рекомендовано людям с излишним весом и болезнями нервной, сердечно-сосудистой и пищеварительной систем</li>
+                        <li>При термальной обработке теряет мало жидкости — блюда легко жуются и быстро перевариваются</li>
+                    </ul>
+                    <img class="ponds-card__img" src="images/new/prud-tolstolobik2.png" alt="Толстолобик">
+                </div>
+                <div class="ponds-card reveal">
+                    <h3>Поликультура: у каждого вида своя ниша</h3>
+                    <p class="ponds-card__lead">Комплекс рыб осваивает разные пищевые ниши — лучше утилизируется естественная кормовая база, достигается мелиоративный эффект, улучшается состояние водоёмов.</p>
+                    <ul class="check-list">
+                        <li>Белый толстолобик — фитофаг</li>
+                        <li>Белый амур — макрофитофаг</li>
+                        <li>Чёрный амур — моллюскофаг</li>
+                        <li>Стерлядь и другие осетровые — бентософаги</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rotation reveal">
+                <h3 class="rotation__title">Трёхлетний цикл выращивания</h3>
+                <div class="rotation__step">
+                    <b>1-й год · садки</b>
+                    <p>Бестера и веслоноса первый год целесообразно выращивать в садках</p>
+                </div>
+                <div class="rotation__step">
+                    <b>2-й год · пруды</b>
+                    <p>Молодь переводится в пруды на нагул</p>
+                </div>
+                <div class="rotation__step">
+                    <b>3-й год · ротация</b>
+                    <p>Карп, щука и часть белого амура переходят в другой пруд — на их место заселяются осетровые</p>
+                </div>
+            </div>
+            <article class="pond-card pond-card--rev ponds-plans reveal">
+                <div class="pond-card__body">
+                    <div class="pond-card__head">
+                        <div>
+                            <h3>Планы и сопутствующие продукты</h3>
+                            <i>цель — рост привлекательности охотхозяйства</i>
+                        </div>
+                    </div>
+                    <ul class="check-list">
+                        <li>Зарыбление прудов всеми видами рыб и строительство второго пруда</li>
+                        <li>Проект выпуска травоядных видов рыб — толстолобик и белый амур</li>
+                        <li>Эксклюзивный мёд с цветов лотоса и белых лилий: лотосы цветут во второй половине лета всего на несколько дней, их тонкий аромат привлекает пчёл — получается редкий, полезный и вкусный мёд</li>
+                    </ul>
+                    <p class="ponds__note">Также в водоёмах хозяйства: стерлядь, сазан, щука, окунь, судак, вобла, лещ, карась.</p>
+                </div>
+                <div class="photo pond-card__photo"><img src="images/new/prud-med.png" alt="Мёд с цветов лотоса"></div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="farm">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Ферма в с. Каралат</p>
+                <h2 class="section__title">Полностью модернизирована в 2016–2021</h2>
+                <p class="section__sub">Коровник 3 900 м² на 400 голов дойного стада · 74,5 га земель · все инженерные системы обновлены</p>
+            </div>
+            <div class="photo photo--wide ponds__hero reveal">
+                <img src="images/new/ferma-base.png" alt="Комплекс фермы в с. Каралат">
+            </div>
+            <div class="farm-facts reveal">
+                <div class="fact"><b>400</b><span>голов дойного стада</span></div>
+                <div class="fact"><b>3 900 м²</b><span>площадь коровника</span></div>
+                <div class="fact"><b>74,5 га</b><span>земельные участки</span></div>
+                <div class="fact"><b>150 кВт</b><span>электроподстанция</span></div>
+            </div>
+            <div class="ponds-species">
+                <article class="pond-card reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Модернизация 2016–2021</h3>
+                                <i>поставлено всё новое</i>
+                            </div>
+                        </div>
+                        <ul class="check-list">
+                            <li>Пластиковые окна и двери в коровнике, зернохранилище и сторожке, 22 металлических ворот</li>
+                            <li>Новая кровля и полы в коровнике</li>
+                            <li>Водопроводная и пожарная системы</li>
+                            <li>Системы отопления и вентиляции, новая электропроводка</li>
+                            <li>Пожарная сигнализация и охранно-телевизионная система</li>
+                        </ul>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/ferma-base4.png" alt="Котельная фермы"></div>
+                </article>
+                <article class="pond-card pond-card--rev reveal">
+                    <div class="pond-card__body">
+                        <div class="pond-card__head">
+                            <div>
+                                <h3>Доильное оборудование и содержание стада</h3>
+                                <i>на балансе фермы</i>
+                            </div>
+                            <span class="pond-card__yield">1 000 л/ч</span>
+                        </div>
+                        <ul class="check-list">
+                            <li>Проточный пастеризатор производительностью 1 000 л/ч</li>
+                            <li>Новый молокопровод и вакуумная система</li>
+                            <li>Новая система навозоуборки</li>
+                            <li>Автоматические поилки и резиновые коврики для коров</li>
+                            <li>Ёмкость для паения телят</li>
+                        </ul>
+                    </div>
+                    <div class="photo pond-card__photo"><img src="images/new/ferma-base2.png" alt="Стойла внутри коровника"></div>
+                </article>
+            </div>
+            <div class="ponds__grid">
+                <div class="ponds-card reveal">
+                    <h3>Здания и сооружения на балансе</h3>
+                    <ul class="check-list">
+                        <li>Коровник 3 900 м² на 400 голов дойного стада, полностью отремонтирован, включая административный блок 250 м²</li>
+                        <li>Телятник 1 200 м², гараж 180 м², зернохранилище 240 м²</li>
+                        <li>Здание 140 м², сторожка 40 м², водокачка 20 м²</li>
+                        <li>Бетонные ёмкости под воду по 50 м³, зарыты в землю</li>
+                        <li>4 ямы для сенажа (требуют ремонта)</li>
+                    </ul>
+                    <img class="ponds-card__img" src="images/new/ferma-base3.png" alt="Водокачка — насосная станция фермы">
+                </div>
+                <div class="ponds-card reveal">
+                    <h3>Земля и энергетика</h3>
+                    <ul class="check-list">
+                        <li>Земельный участок 9,5 га</li>
+                        <li>Участки вокруг фермы общей площадью 50 га</li>
+                        <li>Участок 15 га — бывшая взлётная полоса 950 м, можно увеличить до 1 500 м</li>
+                        <li>Электроподстанция 150 кВт, официально подключено 15 кВт</li>
+                    </ul>
+                    <p class="ponds__note">На балансе фермы, кроме перечисленного, находится много мелкого инвентаря и оборудования.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="registry">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">На балансе ОАО «Волга-Дельта»</p>
+                <h2 class="section__title">Реестр имущества</h2>
+            </div>
+            <div class="registry">
+                <article class="reg-row reveal">
+                    <header class="reg-row__head">
+                        <span class="reg-row__count">17</span>
+                        <h4>Суда и плавсредства</h4>
+                    </header>
+                    <ul class="reg-row__list">
+                        <li><span>«Wave-660»</span><b>1</b></li>
+                        <li><span>«Будара-8,7»</span><b>5</b></li>
+                        <li><span>«Будара-8,5»</span><b>2</b></li>
+                        <li><span>Паром</span><b>1</b></li>
+                        <li><span>Водные велосипеды</span><b>3</b></li>
+                        <li><span>Охотничьи куласи</span><b>5</b></li>
+                        <li><span>Казанка, Крым</span><b>2</b></li>
+                        <li><span>Весельные лодки</span><b>4</b></li>
+                        <li><span>Понтоны</span><b>3</b></li>
+                        <li><span>Бетонная платформа 35×10 м</span><b>1</b></li>
+                    </ul>
+                </article>
+                <article class="reg-row reveal">
+                    <header class="reg-row__head">
+                        <span class="reg-row__count">6</span>
+                        <h4>Земельные участки</h4>
+                    </header>
+                    <ul class="reg-row__list">
+                        <li>1 га, о. Баткачный — база</li>
+                        <li>71 га, о. Баткачный — база</li>
+                        <li>138 + 137 + 107 га, о. Баткачный — пруды, 1 км от базы</li>
+                        <li>1 га, о. Каневский</li>
+                        <li>2 га, о. Хотнийский</li>
+                        <li>8 соток, с. Каралат — около реки, с гаванью, асфальтовый подъезд</li>
+                    </ul>
+                </article>
+                <article class="reg-row reveal">
+                    <header class="reg-row__head">
+                        <span class="reg-row__count">3</span>
+                        <h4>Средства размещения</h4>
+                    </header>
+                    <ul class="reg-row__list">
+                        <li>Гостиница-дебаркадер 70×14 м, 2 этажа, 1 200 м²</li>
+                        <li>Баня (сруб) плавучая, 100 м²</li>
+                        <li>Дебаркадер плавучий, 100 м², Егерская</li>
+                    </ul>
+                </article>
+                <article class="reg-row reveal">
+                    <header class="reg-row__head">
+                        <span class="reg-row__count">8</span>
+                        <h4>Техника</h4>
+                    </header>
+                    <ul class="reg-row__list">
+                        <li>Вездеход на базе УАЗ (УЗОЛА)</li>
+                        <li>Драглайн ЭО-2112, 2009 г.</li>
+                        <li>Драглайн</li>
+                        <li>Бульдозер ДТ-75 «Болотник»</li>
+                        <li>Прицеп для трактора</li>
+                        <li>Аэроглиссер 200 л.с. (охота и зима)</li>
+                        <li>Автобус Iveco Daily, 19 мест, дизель 3 л, 2012 г.</li>
+                        <li>Дизель-генератор 50 кВт (Япония)</li>
+                    </ul>
+                </article>
+                <article class="reg-row reveal">
+                    <header class="reg-row__head">
+                        <span class="reg-row__count">11</span>
+                        <h4>Лодочные моторы</h4>
+                    </header>
+                    <ul class="reg-row__list">
+                        <li><span>Kamanцу 9.9</span><b>2</b></li>
+                        <li><span>«Ямаха» 15</span><b>3</b></li>
+                        <li><span>«Ямаха» 9.9</span><b>3</b></li>
+                        <li><span>«Судаки» 9.9</span><b>1</b></li>
+                        <li><span>«Хонда» 15</span><b>1</b></li>
+                        <li><span>«Ямаха» 200</span><b>1</b></li>
+                        <li><span>Болотоход 32 л.с.</span><b>1</b></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="growth">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Точки роста</p>
+                <h2 class="section__title">Направления развития</h2>
+            </div>
+            <div class="growth">
+                <div class="growth__col reveal">
+                    <h3>Дополнительные доходы</h3>
+                    <ul class="check-list">
+                        <li>Мёд с лотоса — элитный продукт, экспортная цена до $450/кг</li>
+                        <li>Аренда охотничьих и рыболовных угодий</li>
+                        <li>Кормовые, промысловые и водно-болотные угодья</li>
+                        <li>Любительский лов осетровых — белуга ловится только в Каспийском море</li>
+                    </ul>
+                </div>
+                <div class="growth__col reveal">
+                    <h3>Над чем работать</h3>
+                    <ul class="check-list">
+                        <li>Привлечение иностранных туристов</li>
+                        <li>Проведение соревнований по рыбалке и охоте</li>
+                        <li>Развитие корпоративного и семейного отдыха</li>
+                        <li>Запуск продаж участков и плавучих домов посёлка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section class="section section--gallery" id="gallery">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Галерея</p>
+                <h2 class="section__title">Это нужно увидеть своими глазами</h2>
+            </div>
+        </div>
+        <div class="gallery reveal">
+            <figure class="gallery__item gallery__item--xl">
+                <img src="images/new/foto_max_.png" alt="Панорама дельты Волги на закате">
+                <figcaption>Дельта Волги</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/new/foto_max_2.png" alt="Протоки и острова дельты">
+                <figcaption>Аван-дельта</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image4.jpg" alt="Плавучая гостиница" class="crop" style="--zoom:2.9; --pos-x:82%; --pos-y:76%">
+                <figcaption>Плавучий отель</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image5.jpg" alt="Лебеди над водой" class="crop" style="--zoom:2.2; --pos-x:35%; --pos-y:85%">
+                <figcaption>Лебединые полёты</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image6.jpg" alt="Цветение лотоса" class="crop" style="--zoom:3.0; --pos-x:85%; --pos-y:14%">
+                <figcaption>Лотосовые поля</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image6.jpg" alt="Рыбак с трофейным окунем" class="crop" style="--zoom:3.0; --pos-x:15%; --pos-y:45%">
+                <figcaption>Трофейная рыбалка</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image10.jpg" alt="Прудовое хозяйство" class="crop" style="--zoom:2.4; --pos-x:80%; --pos-y:50%">
+                <figcaption>Пруды по 45 га</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image13.jpg" alt="Веслонос" class="crop" style="--zoom:2.4; --pos-x:80%; --pos-y:45%">
+                <figcaption>Осетровые</figcaption>
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/image15.jpg" alt="Ферма с высоты" class="crop" style="--zoom:2.0; --pos-x:78%; --pos-y:35%">
+                <figcaption>Ферма</figcaption>
+            </figure>
+        </div>
+    </section>
+    -->
+
+    <section class="section section--cta" id="contacts">
+        <div class="container">
+            <div class="cta">
+                <div class="cta__text reveal">
+                    <p class="section__eyebrow">Контакты</p>
+                    <p>Каралатское охотничье-рыболовное хозяйство, 27 000 га. ОАО «Волга-Дельта», ИНН 3016001831.</p>
+                    <address class="cta__address">Астраханская обл., Камызякский район,<br>с. Каралат, ул. Заводская, 24</address>
+                    <div class="cta__phones">
+                        <a href="tel:+79272824922" class="cta__phone">8 (927) 282-49-22</a>
+                        <a href="tel:+79061779009" class="cta__phone">8 (906) 177-90-09</a>
+                    </div>
+                    <a href="tel:+79272824922" class="btn">Позвонить</a>
+                </div>
+                <div class="cta__media reveal">
+                    <img src="images/new/baza3.png" alt="Расположение хозяйства на карте" class="fit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <img src="images/logotype.png" alt="Волга-Дельта" class="footer__logo">
+        <p>© ОАО «Волга-Дельта» · Каралатское охотничье-рыболовное хозяйство · основано в 1952 г.</p>
+    </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Предыдущее фото">‹</button>
+    <figure class="lightbox__figure">
+        <img class="lightbox__img" src="" alt="">
+        <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Следующее фото">›</button>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/main.js"></script>
+</body>
+</html>
