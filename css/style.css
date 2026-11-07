@@ -2341,6 +2341,22 @@ img.crop {
     color: var(--muted);
 }
 
+.footer__dev {
+    margin-left: auto;
+    display: inline-flex;
+    opacity: 0.45;
+    transition: opacity 0.2s ease;
+}
+
+.footer__dev:hover {
+    opacity: 0.8;
+}
+
+.footer__dev img {
+    height: 32px;
+    width: auto;
+}
+
 .to-top {
     position: fixed;
     right: 24px;
